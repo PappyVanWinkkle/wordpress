@@ -13,5 +13,14 @@
       register_nav_menu('secondary', 'Footer Navigation');
   }
   
-  add_action('init', 'newtheme_setup');
+   add_action('init', 'newtheme_setup');
+  /*
+  making the user change the background image of the page without touching the css */
+   add_theme_support('custom-background');
+   add_theme_support('custom-header');
+   add_theme_support('post-thumbnail');
+   
+   add_theme_support('post-formats', array('aside', 'image', 'video'));
+   
+   
 ?>
